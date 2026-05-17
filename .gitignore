@@ -1,0 +1,17 @@
+# macOS
+.DS_Store
+._*
+
+# Editor / IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+
+# Claude Code session metadata + worktrees
+.claude/
+
+# Local scratch
+*.log
+.tmp/
