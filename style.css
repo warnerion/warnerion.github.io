@@ -1,0 +1,323 @@
+:root {
+    --primary: #1a4480;
+    --primary-dark: #0c2e5c;
+    --text: #2c2c2c;
+    --grey: #5a5a5a;
+    --light-grey: #888;
+    --border: #e5e5e5;
+    --accent: #c0392b;
+    --bg: #ffffff;
+}
+
+* { box-sizing: border-box; }
+
+html, body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Source Sans Pro', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    font-weight: 400;
+    color: var(--text);
+    background-color: var(--bg);
+    font-size: 16px;
+    line-height: 1.55;
+    letter-spacing: 0.2px;
+}
+
+p { margin: 0 0 12px 0; }
+
+a {
+    color: var(--primary);
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+a:hover { color: var(--accent); }
+
+em, i { font-style: italic; }
+b, strong { font-weight: 600; }
+
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 0 24px;
+}
+
+/* ---------- Header ---------- */
+#header {
+    position: sticky;
+    top: 0;
+    background-color: rgba(255, 255, 255, 0.9);
+    -webkit-backdrop-filter: blur(8px);
+    backdrop-filter: blur(8px);
+    border-bottom: 1px solid var(--border);
+    padding: 14px 0;
+    z-index: 100;
+}
+
+#header-inner {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 0 24px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#header-name {
+    font-size: 1.05em;
+    font-weight: 600;
+    color: var(--primary);
+}
+
+#header-nav { display: flex; gap: 28px; }
+
+#header-nav a {
+    color: var(--grey);
+    font-weight: 500;
+    font-size: 0.95em;
+}
+
+#header-nav a:hover { color: var(--primary); }
+
+/* ---------- Profile ---------- */
+#profile {
+    padding: 50px 0 36px 0;
+    border-bottom: 1px solid var(--border);
+}
+
+#profile-inner {
+    display: flex;
+    gap: 40px;
+    align-items: flex-start;
+}
+
+#profile-pic { flex-shrink: 0; }
+
+#profile-pic img {
+    width: 200px;
+    height: auto;
+    border-radius: 4px;
+    display: block;
+}
+
+#profile-text { flex: 1; min-width: 0; }
+
+#profile-name {
+    font-size: 2.4em;
+    font-weight: 500;
+    color: var(--primary);
+    margin: 0 0 4px 0;
+    line-height: 1.1;
+}
+
+#profile-name .cn {
+    font-size: 0.6em;
+    font-weight: 400;
+    color: var(--grey);
+    margin-left: 8px;
+}
+
+#profile-affil {
+    color: var(--grey);
+    margin-bottom: 14px;
+    font-size: 1.0em;
+}
+
+#profile-text p { margin: 0 0 12px 0; }
+
+#profile-links {
+    margin-top: 18px;
+    font-size: 0.95em;
+    color: var(--grey);
+}
+
+#profile-links a {
+    font-weight: 500;
+    margin: 0 2px;
+}
+
+#profile-links .sep { color: var(--light-grey); margin: 0 4px; }
+
+/* ---------- Sections ---------- */
+.section {
+    padding: 36px 0 30px 0;
+    border-bottom: 1px solid var(--border);
+}
+
+.section:last-of-type { border-bottom: none; }
+
+.section h1 {
+    font-size: 1.55em;
+    font-weight: 600;
+    color: var(--primary);
+    margin: 0 0 18px 0;
+}
+
+.section h2 {
+    font-size: 1.08em;
+    font-weight: 600;
+    color: var(--primary-dark);
+    margin: 26px 0 12px 0;
+    padding-bottom: 4px;
+    border-bottom: 1px solid var(--border);
+}
+
+.section h2:first-of-type { margin-top: 6px; }
+
+/* ---------- News ---------- */
+#news ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+#news li {
+    padding: 7px 0;
+    border-bottom: 1px dashed var(--border);
+}
+
+#news li:last-child { border-bottom: none; }
+
+#news b {
+    color: var(--primary);
+    margin-right: 10px;
+    font-weight: 600;
+    display: inline-block;
+    min-width: 100px;
+}
+
+/* ---------- Projects ---------- */
+.project {
+    display: flex;
+    gap: 24px;
+    align-items: flex-start;
+    margin-bottom: 26px;
+    padding-bottom: 6px;
+}
+
+.project-thumb {
+    flex-shrink: 0;
+    width: 170px;
+    display: block;
+}
+
+.project-thumb img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border: 1px solid var(--border);
+    border-radius: 2px;
+    transition: opacity 0.2s ease;
+}
+
+.project-thumb:hover img { opacity: 0.85; }
+
+.project-body { flex: 1; min-width: 0; }
+
+.project-title {
+    font-weight: 600;
+    color: var(--primary);
+    font-size: 1.02em;
+    margin-bottom: 3px;
+    display: block;
+}
+
+a.project-title { text-decoration: none; }
+a.project-title:hover { color: var(--accent); }
+
+.project-meta {
+    color: var(--light-grey);
+    margin-bottom: 8px;
+    font-size: 0.9em;
+}
+
+.project-meta em { font-style: italic; }
+
+.project-body p { margin: 0 0 6px 0; }
+
+.project-body ul {
+    margin: 6px 0 0 0;
+    padding-left: 22px;
+    list-style: disc;
+}
+
+.project-body ul li {
+    margin-bottom: 4px;
+    color: var(--text);
+}
+
+.project-links {
+    margin-top: 6px;
+    font-size: 0.92em;
+    color: var(--light-grey);
+}
+
+.project-links a { font-weight: 500; }
+.project-links .sep { color: var(--light-grey); margin: 0 6px; }
+
+/* No-thumbnail variant */
+.project.no-thumb .project-body { width: 100%; }
+
+/* ---------- Publications ---------- */
+.pub-list {
+    counter-reset: pub;
+    padding-left: 0;
+    list-style: none;
+    margin: 0;
+}
+
+.pub-list li {
+    counter-increment: pub;
+    padding-left: 38px;
+    position: relative;
+    margin-bottom: 12px;
+}
+
+.pub-list li::before {
+    content: "[" counter(pub) "]";
+    position: absolute;
+    left: 0;
+    top: 0;
+    font-weight: 600;
+    color: var(--grey);
+    font-variant-numeric: tabular-nums;
+}
+
+.author-self {
+    font-weight: 600;
+    color: var(--primary-dark);
+}
+
+/* ---------- Misc ---------- */
+.section ul.plain {
+    list-style: disc;
+    padding-left: 22px;
+    margin: 0 0 14px 0;
+}
+
+.section ul.plain li { margin-bottom: 4px; }
+
+footer {
+    padding: 32px 0;
+    color: var(--light-grey);
+    font-size: 0.88em;
+    text-align: center;
+}
+
+/* ---------- Responsive ---------- */
+@media (max-width: 700px) {
+    #profile-inner {
+        flex-direction: column;
+        gap: 20px;
+        text-align: left;
+    }
+    #profile-name { font-size: 1.9em; }
+    #header-name { display: none; }
+    #header-nav { gap: 18px; }
+    #header-nav a { font-size: 0.88em; }
+    #profile-pic img { width: 160px; }
+    #news b { min-width: 90px; }
+    .container { padding: 0 18px; }
+    .project { flex-direction: column; gap: 12px; }
+    .project-thumb { width: 100%; max-width: 280px; }
+}
