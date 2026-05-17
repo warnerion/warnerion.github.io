@@ -79,6 +79,26 @@
     <section id="research" class="section">
         <h1>Research</h1>
 
+        <h2>Dexterous Manipulation &amp; Sim-to-Real Learning</h2>
+
+        <div class="project">
+            <a href="https://github.com/google-deepmind/mujoco_playground/pull/223" class="project-thumb">
+                <img src="assets/research/mujoco_aero.webp" alt="Tetheria Aero Hand sim-to-real" />
+            </a>
+            <div class="project-body">
+                <a href="https://github.com/google-deepmind/mujoco_playground/pull/223" class="project-title">Tendon-Driven Dexterous Hand: MuJoCo Model and Sim-to-Real RL Environment</a>
+                <div class="project-meta">Open-source contributions to <a href="https://github.com/google-deepmind/mujoco_menagerie">MuJoCo Menagerie</a> &amp; <a href="https://github.com/google-deepmind/mujoco_playground">MuJoCo Playground</a> &middot; Google DeepMind, 2025</div>
+                <p>Built a high-fidelity MuJoCo/MJX model of the <a href="https://docs.tetheria.ai/">Tetheria Aero Hand Open</a> with a fully modeled tendon transmission system (spatial-tendon drives, springs, and pulleys), enabling underactuated control where a single tendon drives multiple joints. Developed a dexterous cube manipulation environment with Z-axis rotation, merged into MuJoCo Playground as an example task. Calibrated MuJoCo tendon actuation against real motor commands to achieve zero-shot sim-to-real policy transfer on the physical hand.</p>
+                <div class="project-links">
+                    <a href="https://github.com/google-deepmind/mujoco_menagerie/pull/213">Menagerie PR</a>
+                    <span class="sep">&middot;</span>
+                    <a href="https://github.com/google-deepmind/mujoco_playground/pull/223">Playground PR</a>
+                    <span class="sep">&middot;</span>
+                    <a href="https://github.com/google-deepmind/mujoco_playground/tree/main/mujoco_playground/_src/manipulation/aero_hand">Code</a>
+                </div>
+            </div>
+        </div>
+
         <h2>Motion Planning for Hybrid Dynamical Systems</h2>
 
         <div class="project">
@@ -214,20 +234,6 @@
 
     <section id="open-source" class="section">
         <h1>Open-Source Contributions</h1>
-
-        <div class="project no-thumb">
-            <div class="project-body">
-                <a href="https://github.com/google-deepmind/mujoco_menagerie/pull/213" class="project-title">MuJoCo Menagerie &middot; Google DeepMind</a>
-                <p>Developed and integrated tendon-driven dexterous hand models into the official repository, enabling reproducible research for robotic manipulation used by academic and industry researchers worldwide.</p>
-            </div>
-        </div>
-
-        <div class="project no-thumb">
-            <div class="project-body">
-                <a href="https://github.com/google-deepmind/mujoco_playground/pull/223" class="project-title">MuJoCo Playground &middot; Google DeepMind</a>
-                <p>Implemented dexterous manipulation environments, RL training modules, and simulation tooling widely used for benchmarking reinforcement learning algorithms.</p>
-            </div>
-        </div>
 
         <div class="project no-thumb">
             <div class="project-body">
