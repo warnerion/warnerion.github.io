@@ -79,9 +79,9 @@ GIT_SSH_COMMAND="ssh -i ~/.ssh/id_rsa -o IdentitiesOnly=yes" git push origin mas
 3. **Research** — grouped by `<h2>` topic. Each entry is a `<div class="project">`
    with thumbnail (left) + title (linked to paper) + meta (authors · venue ·
    year) + 1-paragraph description + links row.
-4. **Open-Source Contributions** — currently only OMPL. The two MuJoCo PRs
-   (Menagerie + Playground) were intentionally promoted into the Research
-   section as a single unified entry; don't duplicate them here.
+4. **Open-Source Contributions** — list of upstream PRs: MuJoCo Menagerie,
+   MuJoCo Playground, OMPL. The MuJoCo work also appears as a unified Research
+   entry (with thumbnail) for visibility — that's intentional, keep both.
 5. **Selected Publications** — numbered `<ol class="pub-list">`, paper title
    linked to arXiv / preprint / IEEE Xplore.
 6. **Posters & Presentations** — list of PDFs in `assets/pdfs/`.
